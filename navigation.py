@@ -1,7 +1,7 @@
 from yaml import Loader, load
 from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-MENU = load(open('navigation.yml', 'r', encoding='utf-8'), Loader=Loader)
+MENU = load(open('navigation.yaml', 'r', encoding='utf-8'), Loader=Loader)
 
 def get_static_buttons(context: dict):
     buttons = []
